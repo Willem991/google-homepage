@@ -23,12 +23,28 @@
                 
             }
 
+            .btnstyle1{
+                justify-self:left ;
+                margin-top: 10%;
+            }
+
+            .btnstyle2{
+                justify-self:right ;
+                margin-top: 10%;
+            }
+
             .bar:hover{
                 box-shadow: 0px 0px 5px  grey;
             }
 
             .bar:focus{
                 outline: none !important;
+            }
+
+            .btndiv{
+                display: grid;
+                grid-template-columns: repeat(2,130px);
+                grid-template-rows: 50px;
             }
 
         </style>
@@ -39,6 +55,12 @@
         <div class="Main-search">  
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">    
             <input  class="bar" type="text" name="Search" id="Searchbx">
+            
+            <div class="btndiv">
+                <input class="btnstyle1" type="button" value="Google Search">
+                <input class="btnstyle2" type="button" value="I'm feeling lucky">
+            </div>
+
         </div> 
     </body>
 </html>

@@ -63,12 +63,54 @@
                 
             }
 
+            .image{
+                border:none;
+                background-color: white;
+                grid-column-start: -4;
+
+            }
+
+            .glgapps{
+                border:none;
+                background-color: white;
+                grid-column-start: -3;
+                margin-right: 5px;
+                max-width: 30%;
+                justify-self: center;
+                align-self: center;
+            }
+
+            .glgapps:hover{
+                background-color: rgba(201, 198, 198, 0.548);
+                border-radius: 100%;
+                padding: 2px;
+            }
+
+
+            .image:hover{
+                text-decoration: underline;
+            }
+
+            .gmail{
+                border:none;
+                background-color: white;
+                grid-column-start: -5;
+                margin-right: 5px;
+            }
+
+            .gmail:hover{
+                text-decoration: underline;
+            }
+
         </style>
 
     </head>
 
     <body>
         <div class="firstdiv">
+            <input class="gmail" type="button" value="Gmail">
+            <input class="image" type="button" value="images">
+            <img class="glgapps" src="https://cdn.icon-icons.com/icons2/1369/PNG/512/-apps_90405.png" alt="google apps">
             <input class="signin" type="button" value="sign in">
         </div>
 

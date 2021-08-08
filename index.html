@@ -7,13 +7,18 @@
             .Main-search{
                 display:grid;
                 justify-items: center;
-                margin-top: 20%;
+                margin-top: 18%;
             }
 
-            
+            .firstdiv{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 70px);
+                grid-template-rows: 27px;
+            }
 
             #Searchbx{
                 margin: 0 auto;
+                margin-top: 15px;
                 width:570px;
                 height:40px;
                 border-radius:30px;
@@ -45,6 +50,17 @@
                 display: grid;
                 grid-template-columns: repeat(2,130px);
                 grid-template-rows: 50px;
+                
+            }
+
+            .signin{
+                
+                background-color: rgb(52, 138, 218);
+                color: white;
+                grid-column-start: -2;
+                border-radius: 10%;
+                border: none;
+                
             }
 
         </style>
@@ -52,6 +68,10 @@
     </head>
 
     <body>
+        <div class="firstdiv">
+            <input class="signin" type="button" value="sign in">
+        </div>
+
         <div class="Main-search">  
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">    
             <input  class="bar" type="text" name="Search" id="Searchbx">
